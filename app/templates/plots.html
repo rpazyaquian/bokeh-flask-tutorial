@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plots</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-bokeh-2.0.4.css') }}" type="text/css" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bokeh.css') }}" type="text/css" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/continuum.css') }}" type="text/css" />
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bokeh.js') }}"></script>
+
+</head>
+<body>
+
+<div id="plot">
+    {{ snippet|safe }}
+</div>
+
+</body>
+</html>
